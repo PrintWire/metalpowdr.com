@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Metalpowdr. Ask a question or request a quote. PrintWire passes quote requests to specialised manufacturers and replies with pricing.">
-    <meta property="og:title" content="Contact | Metalpowdr">
-    <meta property="og:description" content="Contact Metalpowdr. Ask a question or request a quote. PrintWire passes quote requests to specialised manufacturers and replies with pricing.">
+    <meta name="description" content="Contact Metal Powdr. Ask a question or request a quote. PrintWire passes quote requests to specialised manufacturers and replies with pricing.">
+    <meta property="og:title" content="Contact | Metal Powdr">
+    <meta property="og:description" content="Contact Metal Powdr. Ask a question or request a quote. PrintWire passes quote requests to specialised manufacturers and replies with pricing.">
     <meta name="author" content="Max Davis, Ben Stagl, Ally Reza - ChiLab Studio">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.unsplash.com/photo-1742112125567-3e8967bad60f?w=600&q=80">
-    <title>Contact | Metalpowdr</title>
+    <title>Contact | Metal Powdr</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="services.html" class="nav-link">Quotes</a></li>
                     <li><a href="contact.html" class="nav-link active">Contact</a></li>
                     <li><a href="viewer.html" class="nav-link">3D Viewer</a></li>
                 </ul>
@@ -92,11 +92,20 @@
                                 <div class="form-error" id="message-error"></div>
                             </div>
                             <div class="form-group">
-                                <label for="attachment">Attach File (optional)</label>
+<label for="export_control">Is this part subject to ITAR or EAR? <span class="required">*</span></label>
+<select id="export_control" name="export_control" required style="width:100%;padding:0.6rem;">
+<option value="">Select an answer</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+<option value="not-sure">Not sure</option>
+</select>
+</div>
+<div class="form-group">
+                                <label for="attachment">Attach a CAD file or PDF drawing (optional)</label>
                                 <input type="file" id="attachment" name="attachment">
                             </div>
+<p class="pw-consent" style="font-size:0.8rem;line-height:1.5;margin:0.9rem 0;opacity:0.9;"><label style="display:flex;gap:0.5rem;align-items:flex-start;font-weight:400;text-transform:none;letter-spacing:0;"><input type="checkbox" name="consent" value="agreed" required style="width:auto;flex:none;margin-top:0.2rem;"> <span>I have the right to share these files. I agree that PrintWire may send my request, files and contact details to manufacturers to obtain pricing, and that they may contact me about this request. If I place an order, my contract is with the manufacturer, not PrintWire. I accept the <a href="/terms.html" style="text-decoration:underline;">Terms</a> and <a href="/privacy.html" style="text-decoration:underline;">Privacy Policy</a>.</span></label></p>
                             <button type="submit" class="btn btn-primary btn-large btn-submit">Send Message</button>
-<p class="pw-consent" style="font-size:0.8rem;line-height:1.5;margin-top:0.9rem;opacity:0.85;">By sending this form you agree that PrintWire may pass your request to manufacturers to obtain pricing. See the <a href="/privacy.html" style="text-decoration:underline;">privacy page</a>.</p>
 </form>
                     </div>
                 </div>
@@ -110,24 +119,23 @@
             <div class="footer-main">
                 <div class="footer-brand">
                     <div class="footer-logo">Metalpowdr</div>
-                    <p>Premium Metal Powders for Advanced Manufacturing</p>
+                    <p>A PrintWire network site about metal powder for additive manufacturing. PrintWire passes quote requests to specialised manufacturers and returns pricing.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Company</h4>
                         <ul>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
+                            <li><a href="services.html">Quotes</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>Services</h4>
+                        <h4>Quotes</h4>
                         <ul>
-                            <li><a href="services.html">Titanium Powders</a></li>
-                            <li><a href="services.html">Steel & Stainless</a></li>
-                            <li><a href="services.html">Aluminum & Nickel</a></li>
-                        </ul>
+                            <li><a href="/services.html">How quotes work</a></li>
+                            <li><a href="/contact.html">Request a quote</a></li>
+                          </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Contact</h4>
@@ -138,7 +146,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Metalpowdr. All rights reserved.</p>
+                <p>&copy; 2026 Metal Powdr. All rights reserved.</p>
             </div>
         </div>
     <p class="pw-legal" style="text-align:center;font-size:0.8rem;padding:0.75rem 1rem;margin:0;"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a></p>
